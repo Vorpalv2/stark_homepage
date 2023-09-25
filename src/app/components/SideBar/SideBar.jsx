@@ -2,7 +2,7 @@ import React from "react";
 
 const SideBar = () => {
   return (
-    <div className="bg-white flex flex-col w-1/5justify-center items-start m-5 p-5">
+    <div className="bg-white flex flex-col w-1/5 justify-center items-start m-5 p-5">
       <h3
         className=" mb-4 font-light text-lg 
       text-[#4b4b4e]"
