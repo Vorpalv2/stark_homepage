@@ -40,7 +40,7 @@ const Navbar = () => {
         >
           LOG IN
         </a>
-        <button className="bg-[#381fd1] text-white rounded-md p-1 text-sm px-4">
+        <button className="bg-[#381fd1] hover:bg-[#7e6de9] text-white rounded-md p-1 text-sm px-4">
           30-DAY FREE TEAM TRIAL
         </button>
       </ul>
