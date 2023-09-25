@@ -2,7 +2,7 @@ import React from "react";
 
 const SideBar = () => {
   return (
-    <div className="bg-white flex flex-col w-1/5 justify-center items-start m-5 p-5">
+    <div className="bg-white flex flex-col w-2/12 justify-center items-start m-5 p-5">
       <h3
         className=" mb-4 font-light text-lg 
       text-[#4b4b4e]"
@@ -23,8 +23,8 @@ const SideBar = () => {
         id="submitBox"
         className="flex p-6 rounded-md mt-6 bg-[#f3f2fc] text-black flex-col justify-center"
       >
-        <h2 className="font-bold text-2xl">Contribution to Stark</h2>
-        <h2 className="mt-2 mb-6 font-light color-[#4b4b4e]">
+        <h2 className="font-bold text-xl">Contribution to Stark</h2>
+        <h2 className="mt-2 mb-6 text-sm font-light color-[#4b4b4e]">
           Got any accessibility resources
           <br /> or news?
         </h2>
