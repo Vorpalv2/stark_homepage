@@ -2,8 +2,11 @@ import React from "react";
 
 const SideBar = () => {
   return (
-    <div className="flex flex-col w-1/4 justify-center items-start m-5 p-5">
-      <h3 className=" mb-4 font-light text-lg color-[#4b4b4e]">
+    <div className="bg-white flex flex-col w-1/5justify-center items-start m-5 p-5">
+      <h3
+        className=" mb-4 font-light text-lg 
+      text-[#4b4b4e]"
+      >
         Search Library
       </h3>
       <input
@@ -11,17 +14,21 @@ const SideBar = () => {
         type="text"
         name="SearchBox"
       />
-      <ul className="font-light text-sm color-[#4b4b4e]">
-        <li className=" text-lg py-2 pl-2">Home</li>
-        <li className=" text-lg py-2 pl-2">Collections</li>
-        <li className=" text-lg py-2 pl-2">Categories</li>
+      <ul className="font-light text-sm text-[#4b4b4e]">
+        <li className="text-lg py-2 pl-2">Home</li>
+        <li className="text-lg py-2 pl-2">Collections</li>
+        <li className="text-lg py-2 pl-2">Categories</li>
       </ul>
-      <div id="submitBox">
-        <h2 className="font-bold text-xl">Contribution to Stark</h2>
-        <h2 className="font-light color-[#4b4b4e]">
-          Got any accessibility resources or news?
+      <div
+        id="submitBox"
+        className="flex p-6 rounded-md mt-6 bg-[#f3f2fc] text-black flex-col justify-center"
+      >
+        <h2 className="font-bold text-2xl">Contribution to Stark</h2>
+        <h2 className="mt-2 mb-6 font-light color-[#4b4b4e]">
+          Got any accessibility resources
+          <br /> or news?
         </h2>
-        <button className="bg-[#381fd1] hover:bg-[#7e6de9] text-white rounded-md p-1 text-sm px-4">
+        <button className="bg-[#381fd1] hover:bg-[#7e6de9] text-white rounded-md text-sm px-1 py-3">
           Submit a Resource
         </button>
       </div>
