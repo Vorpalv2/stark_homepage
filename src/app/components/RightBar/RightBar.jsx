@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import ItemBox from "../ItemBox/ItemBox";
 
 const RightBar = () => {
   const [data, useData] = useState({
@@ -16,7 +17,29 @@ const RightBar = () => {
         </a>
       </div>
       <h3 className="pt-2 text-[#4b4b4e] font-semibold">{data.Paragraph}</h3>
-      <div id="boxContainer">{/* 6 Boxes inside */}</div>
+      <div className="flex" id="boxContainer">
+        <ItemBox
+          imageLink={
+            "https://res.cloudinary.com/stark-lab/image/upload/v1679345736/uni_profile_93228_9c84b19231.jpg"
+          }
+          Title={"RESOURCES"}
+          Description={"Making Accessible Books"}
+        />
+        <ItemBox
+          imageLink={
+            "https://res.cloudinary.com/stark-lab/image/upload/v1679345736/uni_profile_93228_9c84b19231.jpg"
+          }
+          Title={"RESOURCES"}
+          Description={"Making Accessible Books"}
+        />
+        <ItemBox
+          imageLink={
+            "https://res.cloudinary.com/stark-lab/image/upload/v1679345736/uni_profile_93228_9c84b19231.jpg"
+          }
+          Title={"RESOURCES"}
+          Description={"Making Accessible Books"}
+        />
+      </div>
     </div>
   );
 };
