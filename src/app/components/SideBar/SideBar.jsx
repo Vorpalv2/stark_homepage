@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const SideBar = () => {
   return (
@@ -9,16 +10,39 @@ const SideBar = () => {
       >
         Search Library
       </h3>
-      <input
-        className="mb-4 p-1 border-2 rounded-md text-black border-gray-400 focus:border-[#f3f2fc]"
-        type="text"
-        name="SearchBox"
-      />
-      <ul className="font-light text-sm text-[#4b4b4e]">
-        <li className="text-lg py-2 pl-2">Home</li>
-        <li className="text-lg py-2 pl-2">Collections</li>
-        <li className="text-lg py-2 pl-2">Categories</li>
-      </ul>
+      <div id="SearchBox" className="flex relative w-[200px]">
+        <img
+          className="absolute top-[10px] left-[10px]"
+          src="/Basic.jpg"
+          width={20}
+          height={20}
+        />
+        <input
+          className="mb-4 p-1 pl-[50px] border-2 rounded-md text-black border-gray-400 focus:border-[#f3f2fc]"
+          type="text"
+          name="SearchBox"
+        />
+      </div>
+      <div className="font-light text-sm flex flex-col text-[#4b4b4e]">
+        <a
+          href="/Product"
+          className="text-lg py-2 pl-2 font-bold text-[#381fd1]"
+        >
+          Home
+        </a>
+        <a
+          href="/Product"
+          className="text-lg py-2 pl-2 font-bold hover:text-[#381fd1] active:text-[#381fd1]"
+        >
+          Collections
+        </a>
+        <a
+          href="/Product"
+          className="text-lg py-2 pl-2 font-bold active:text-[#381fd1] hover:text-[#381fd1]"
+        >
+          Categories
+        </a>
+      </div>
       <div
         id="submitBox"
         className="flex p-6 rounded-md mt-6 bg-[#f3f2fc] text-black flex-col justify-center"

@@ -6,7 +6,7 @@ const ItemBox = ({ Link, imageLink, Title, Description }) => {
     <>
       <a
         href={Link}
-        className="flex rounded-lg justify-start border flex-col px-4 pt-4 w-1/3 h-52 m-4 pl-5"
+        className="flex rounded-lg justify-start hover:border-slate-700 border flex-col px-4 pt-4 w-1/3 h-52 m-4 pl-5"
       >
         <img
           className="rounded-lg py-1"
