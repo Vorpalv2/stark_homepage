@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import ItemBox from "../ItemBox/ItemBox";
+import CollectionsBox from "../CollectionsBox/CollectionsBox";
 
 const RightBar = () => {
   const [data, useData] = useState({
@@ -89,7 +90,7 @@ const RightBar = () => {
         </div>
       </div>
       <div className="pt-2 flex justify-between" id="firstLine">
-        <h1 className="text-[#11284b] font-bold text-5xl pl-4">
+        <h1 className="text-[#11284b] font-bold text-5xl pl-4 mt-6">
           {bottomData.Heading}
         </h1>
         <a className="underline text-blue-700 font-bold pr-5" href="">
@@ -99,8 +100,11 @@ const RightBar = () => {
       <h3 className="pl-4 pt-2 text-[#4b4b4e] font-semibold">
         {bottomData.Paragraph}
       </h3>
-      <div id="bottomBox" className="bg-red-400 w-full flex">
+      <div id="bottomBox" className="h-[430px] w-full flex">
         {/* custom component here */}
+        <CollectionsBox Data="Disability Employment" />
+        <CollectionsBox Data="Making Accessible Color Combos" />
+        <CollectionsBox Data="Tips and Tricks for Inclusive Social Media" />
       </div>
     </div>
   );

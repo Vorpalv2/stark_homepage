@@ -13,12 +13,12 @@ const SideBar = () => {
       <div id="SearchBox" className="flex relative w-[200px]">
         <img
           className="absolute top-[10px] left-[10px]"
-          src="/Basic.jpg"
+          src="/SideBar/Basic.jpg"
           width={20}
           height={20}
         />
         <input
-          className="mb-4 p-1 pl-[50px] border-2 rounded-md text-black border-gray-400 focus:border-[#f3f2fc]"
+          className="mb-4 p-1 pl-[50px] w-[250px] border-2 rounded-md text-black border-gray-400 focus:border-[#f3f2fc]"
           type="text"
           name="SearchBox"
         />
