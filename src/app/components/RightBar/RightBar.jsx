@@ -12,7 +12,7 @@ const RightBar = () => {
     <div className="bg-red-400 w-6/12 m-5 p-5">
       <div className="pt-2 flex justify-between" id="firstLine">
         <h1 className="text-[#11284b] font-bold text-5xl">{data.Heading}</h1>
-        <a className="underline text-blue-700 font-bold" href="">
+        <a className="pr-[190px] underline text-blue-700 font-bold" href="">
           VIEW ALL
         </a>
       </div>
