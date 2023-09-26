@@ -24,6 +24,7 @@ const RightBar = () => {
       <div className="flex flex-col w-full" id="boxContainer">
         <div className="flex">
           <ItemBox
+            Link={"https://makingaccessiblebooks.ca/"}
             imageLink={
               "https://res.cloudinary.com/stark-lab/image/upload/v1679345736/uni_profile_93228_9c84b19231.jpg"
             }
@@ -31,6 +32,9 @@ const RightBar = () => {
             Description={"Making Accessible Books"}
           />
           <ItemBox
+            Link={
+              "https://www.getstark.co/library/link/?href=https%3A%2F%2Finclusivepublishing.org%2F"
+            }
             imageLink={
               "https://res.cloudinary.com/stark-lab/image/upload/v1679345547/daisy_high_e2e14faca3.jpg"
             }
@@ -38,6 +42,7 @@ const RightBar = () => {
             Description={"Inclusive Publishing"}
           />
           <ItemBox
+            Link={"https://apln.ca/"}
             imageLink={
               "https://res.cloudinary.com/stark-lab/image/upload/v1679345933/Screenshot_2023_03_20_at_3_58_45_PM_b615f86e7e.png"
             }
@@ -47,6 +52,9 @@ const RightBar = () => {
         </div>
         <div className="flex">
           <ItemBox
+            Link={
+              "https://www.getstark.co/library/link/?href=http%3A%2F%2Fkb.daisy.org%2Fpublishing%2Fdocs%2F"
+            }
             imageLink={
               "https://res.cloudinary.com/stark-lab/image/upload/v1679345547/daisy_high_e2e14faca3.jpg"
             }
@@ -54,6 +62,9 @@ const RightBar = () => {
             Description={"The DAISY Consortium’s Accessible"}
           />
           <ItemBox
+            Link={
+              "https://www.getstark.co/library/link/?href=https%3A%2F%2Flanguageplease.org%2F"
+            }
             imageLink={
               "https://res.cloudinary.com/stark-lab/image/upload/v1658845042/language_please_logo_d4b822280f.png"
             }
@@ -61,6 +72,9 @@ const RightBar = () => {
             Description={"Language, Please: Style Guide & Resources"}
           />
           <ItemBox
+            Link={
+              "https://www.thinkwithgoogle.com/future-of-marketing/management-and-culture/diversity-and-inclusion/precise-inclusive-language/"
+            }
             imageLink={
               "https://res.cloudinary.com/stark-lab/image/upload/v1653070254/library_author_google_7723cb132a.png"
             }
