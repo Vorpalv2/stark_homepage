@@ -10,7 +10,7 @@ const SideBar = () => {
         Search Library
       </h3>
       <input
-        className="mb-4 p-1 border-2 rounded-md text-black border-slate-500"
+        className="mb-4 p-1 border-2 rounded-md text-black border-gray-400 focus:border-[#f3f2fc]"
         type="text"
         name="SearchBox"
       />
