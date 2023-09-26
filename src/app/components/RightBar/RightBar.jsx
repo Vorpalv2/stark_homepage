@@ -8,8 +8,13 @@ const RightBar = () => {
     Paragraph: "Newly added accessiblity resources, guides, and more.",
   });
 
+  const [bottomData, setBottomData] = useState({
+    Heading: "Featured Collections",
+    Paragraph: "Handpicked and curated collections around accessiblity.",
+  });
+
   return (
-    <div className="bg-white w-6/12 m-5 p-5">
+    <div className="bg-white w-6/12 m-5 p-5 ml-0 pl-0">
       <div className="pt-2 flex justify-between" id="firstLine">
         <h1 className="text-[#11284b] font-bold text-5xl pl-4">
           {data.Heading}
@@ -82,6 +87,20 @@ const RightBar = () => {
             Description={"4 steps to more inclusive, precise language"}
           />
         </div>
+      </div>
+      <div className="pt-2 flex justify-between" id="firstLine">
+        <h1 className="text-[#11284b] font-bold text-5xl pl-4">
+          {bottomData.Heading}
+        </h1>
+        <a className="underline text-blue-700 font-bold pr-5" href="">
+          VIEW ALL
+        </a>
+      </div>
+      <h3 className="pl-4 pt-2 text-[#4b4b4e] font-semibold">
+        {bottomData.Paragraph}
+      </h3>
+      <div id="bottomBox" className="bg-red-400 w-full flex">
+        {/* custom component here */}
       </div>
     </div>
   );
