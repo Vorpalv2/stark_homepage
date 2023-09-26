@@ -8,7 +8,7 @@ const RightBar = () => {
   });
 
   return (
-    <div>
+    <div className="bg-red-400 w-6/12">
       <div id="firstLine">
         <h1>{data.Heading}</h1>
         <a href="">VIEW ALL</a>
