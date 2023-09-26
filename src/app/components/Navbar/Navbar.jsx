@@ -1,48 +1,40 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 
 const Navbar = () => {
+  const [style, setStyle] = useState({
+    aStyle:
+      "flex justify-center items-center p-1 w-20 hover:border-2 rounded-md border-[#381fd1]",
+    containerStyle:
+      "w-full h-14 bg-[#f6f6eb] text-[#381fd1] font-extrabold text-sm",
+    ulStyle: "h-10 flex justify-center gap-8 items-center pt-2",
+    buttonStyle:
+      "bg-[#381fd1] hover:bg-[#7e6de9] text-white rounded-md p-1 text-sm px-4",
+  });
+
   return (
-    <div className="w-full h-14 bg-[#f6f6eb] text-[#381fd1] font-extrabold text-sm">
-      <ul className="h-10 flex justify-center gap-8 items-center pt-2">
-        <a
-          className="flex justify-center items-center p-1 w-20 hover:border-2 rounded-md border-[#381fd1]"
-          href="/Product"
-        >
+    <div className={style.containerStyle}>
+      <ul className={style.ulStyle}>
+        <a className={style.aStyle} href="/Product">
           PRODUCT
         </a>
-        <a
-          className="flex justify-center items-center p-1 w-20 hover:border-2 rounded-md border-[#381fd1]"
-          href="/"
-        >
+        <a className={style.aStyle} href="/">
           PRICING
         </a>
-        <a
-          className="flex justify-center items-center p-1 w-20 hover:border-2 rounded-md border-[#381fd1]"
-          href="/"
-        >
+        <a className={style.aStyle} href="/">
           BLOG
         </a>
-        <a
-          className="flex justify-center items-center p-1 w-20 hover:border-2 rounded-md border-[#381fd1]"
-          href="/"
-        >
+        <a className={style.aStyle} href="/">
           LIBRARY
         </a>
-        <a
-          className="flex justify-center items-center p-1 w-20 hover:border-2 rounded-md border-[#381fd1]"
-          href="/"
-        >
+        <a className={style.aStyle} href="/">
           SUPPORT
         </a>
-        <a
-          className="flex justify-center items-center p-1 w-20 hover:border-2 rounded-md border-[#381fd1]"
-          href="/"
-        >
+        <a className={style.aStyle} href="/">
           LOG IN
         </a>
-        <button className="bg-[#381fd1] hover:bg-[#7e6de9] text-white rounded-md p-1 text-sm px-4">
-          30-DAY FREE TEAM TRIAL
-        </button>
+        <button className={style.buttonStyle}>30-DAY FREE TEAM TRIAL</button>
       </ul>
     </div>
   );
