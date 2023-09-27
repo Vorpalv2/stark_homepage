@@ -49,7 +49,7 @@ const SideBar = () => {
             viewBox="0 0 10 6"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="mr-[20px] mt-3 ml-4"
+            className="mr-[20px] mt-4 ml-4"
           >
             <title>Disclose arrow</title>
             <path
