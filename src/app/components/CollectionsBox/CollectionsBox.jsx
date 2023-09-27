@@ -9,6 +9,7 @@ const CollectionsBox = (props) => {
         src="https://res.cloudinary.com/stark-lab/image/upload/v1653845742/library_collection_Collection_Boundless_Disability_Employment_c297d236d9.png"
         height={333}
         width={259}
+        alt="Disability Collection"
       />
       <h1 className="relative text-[#11284b] font-extrabold text-2xl pt-8 pl-8 pr-8">
         {props.Data}

@@ -9,6 +9,12 @@ const RightBar = () => {
     Paragraph: "Newly added accessiblity resources, guides, and more.",
   });
 
+  const [collectionData, setCollectionData] = useState([
+    "Disability Employment",
+    "Making Accessible Color Combos",
+    "Tips and Tricks for Inclusive Social Media",
+  ]);
+
   const [bottomData, setBottomData] = useState({
     Heading: "Featured Collections",
     Paragraph: "Handpicked and curated collections around accessiblity.",
@@ -102,9 +108,12 @@ const RightBar = () => {
       </h3>
       <div id="bottomBox" className="h-[430px] w-full flex">
         {/* custom component here */}
-        <CollectionsBox Data="Disability Employment" />
+        {collectionData.map((e, i) => {
+          return <CollectionsBox key={i} Data={e} />;
+        })}
+        {/* <CollectionsBox Data="Disability Employment" />
         <CollectionsBox Data="Making Accessible Color Combos" />
-        <CollectionsBox Data="Tips and Tricks for Inclusive Social Media" />
+        <CollectionsBox Data="Tips and Tricks for Inclusive Social Media" /> */}
       </div>
     </div>
   );
