@@ -36,12 +36,31 @@ const SideBar = () => {
         >
           Collections
         </a>
-        <a
-          href="/Product"
-          className="text-lg py-2 pl-2 font-bold active:text-[#381fd1] hover:text-[#381fd1]"
-        >
-          Categories
-        </a>
+        <div className="flex justify-between w-[250px]">
+          <a
+            href="/Page/Product"
+            className="text-lg pl-2 py-2 font-bold active:text-[#381fd1] hover:text-[#381fd1]"
+          >
+            Categories
+          </a>
+          <svg
+            width="10"
+            height="6"
+            viewBox="0 0 10 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="mr-[20px] mt-3 ml-4"
+          >
+            <title>Disclose arrow</title>
+            <path
+              d="M1 1L5 5L9 1"
+              stroke="#4B4B4E"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </div>
       </div>
       <div
         id="submitBox"
