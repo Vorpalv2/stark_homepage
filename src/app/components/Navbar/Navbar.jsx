@@ -20,13 +20,13 @@ const Navbar = () => {
   return (
     <div className={style.containerStyle}>
       <ul className={style.ulStyle}>
-        <a className={style.aStyle} href="/Product">
+        <a className={style.aStyle} href="/Page/Product">
           PRODUCT
         </a>
-        <a className={style.aStyle} href="/">
+        <a className={style.aStyle} href="/Page/Home">
           PRICING
         </a>
-        <a className={style.aStyle} href="/">
+        <a className={style.aStyle} href="/Home">
           BLOG
         </a>
         <a className={style.aStyle} href="/">
