@@ -1,7 +1,16 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 
 const SideBar = () => {
+  const [collapsed, setcollapsed] = useState(false);
+
+  const collapseHandler = () => {
+    setcollapsed(!collapsed);
+    console.log(collapsed);
+  };
+
   return (
     <div className="bg-white flex flex-col w-2/12 justify-start items-start m-5 p-5 pr-0 mr-0">
       <h3
@@ -36,31 +45,54 @@ const SideBar = () => {
         >
           Collections
         </a>
-        <div className="flex justify-between w-[250px]">
-          <a
-            href="/Page/Product"
+        <button
+          onClick={() => collapseHandler()}
+          className="flex justify-between w-[250px]"
+        >
+          <h2
+            // href="/Page/Product"
             className="text-lg pl-2 py-2 font-bold active:text-[#381fd1] hover:text-[#381fd1]"
           >
             Categories
-          </a>
-          <svg
-            width="10"
-            height="6"
-            viewBox="0 0 10 6"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="mr-[20px] mt-4 ml-4"
-          >
-            <title>Disclose arrow</title>
-            <path
-              d="M1 1L5 5L9 1"
-              stroke="#4B4B4E"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></path>
-          </svg>
-        </div>
+          </h2>
+          {collapsed === false ? (
+            <svg
+              width="10"
+              height="6"
+              viewBox="0 0 10 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="mr-[20px] mt-4 ml-4"
+            >
+              <title>Disclose arrow</title>
+              <path
+                d="M1 1L5 5L9 1"
+                stroke="#4B4B4E"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          ) : (
+            <svg
+              width="10"
+              height="6"
+              viewBox="0 0 10 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="mr-[20px] mt-4 ml-4 rotate-180"
+            >
+              <title>Disclose arrow</title>
+              <path
+                d="M1 1L5 5L9 1"
+                stroke="#4B4B4E"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          )}
+        </button>
       </div>
       <div
         id="submitBox"
