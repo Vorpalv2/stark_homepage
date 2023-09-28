@@ -55,43 +55,27 @@ const SideBar = () => {
           >
             Categories
           </h2>
-          {collapsed === false ? (
-            <svg
-              width="10"
-              height="6"
-              viewBox="0 0 10 6"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="mr-[20px] mt-4 ml-4"
-            >
-              <title>Disclose arrow</title>
-              <path
-                d="M1 1L5 5L9 1"
-                stroke="#4B4B4E"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-          ) : (
-            <svg
-              width="10"
-              height="6"
-              viewBox="0 0 10 6"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="mr-[20px] mt-4 ml-4 rotate-180"
-            >
-              <title>Disclose arrow</title>
-              <path
-                d="M1 1L5 5L9 1"
-                stroke="#4B4B4E"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-          )}
+          <svg
+            width="10"
+            height="6"
+            viewBox="0 0 10 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className={
+              collapsed === false
+                ? "mr-[20px] mt-4 ml-4"
+                : "mr-[20px] mt-4 ml-4 rotate-180"
+            }
+          >
+            <title>Disclose arrow</title>
+            <path
+              d="M1 1L5 5L9 1"
+              stroke="#4B4B4E"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
         </button>
       </div>
       <div
