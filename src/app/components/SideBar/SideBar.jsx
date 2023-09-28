@@ -70,14 +70,9 @@ const SideBar = () => {
         </a>
         <button
           onClick={() => collapseHandler()}
-          className="flex justify-between w-[250px]"
+          className="flex justify-between w-[250px] hover:text-[#381fd1] active:text-[#381fd1"
         >
-          <h2
-            // href="/Page/Product"
-            className="text-lg pl-2 py-2 font-bold active:text-[#381fd1] hover:text-[#381fd1]"
-          >
-            Categories
-          </h2>
+          <h2 className="text-lg pl-2 py-2 font-bold">Categories</h2>
           <svg
             width="10"
             height="6"
@@ -86,7 +81,7 @@ const SideBar = () => {
             xmlns="http://www.w3.org/2000/svg"
             className={
               collapsed === false
-                ? "mr-[20px] mt-4 ml-4"
+                ? "mr-[20px] mt-4 ml-4 hover:text-[#381fd1] hover:bg-[#381fd1]"
                 : "mr-[20px] mt-4 ml-4 rotate-180"
             }
           >
