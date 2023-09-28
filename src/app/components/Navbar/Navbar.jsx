@@ -71,7 +71,7 @@ const Navbar = () => {
           </a>
           {isMouseOn && <HoverList />}
         </div>
-        <a className={style.aStyle} href="/Page/Home">
+        <a className={style.aStyle} href="/Page/Pricing">
           PRICING
         </a>
         <a className={style.aStyle} href="/Home">
