@@ -2,8 +2,31 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import ListItem from "../ListItems/ListItem";
+import CollectionsBox from "../CollectionsBox/CollectionsBox";
 
 const SideBar = () => {
+  const [categoriesData, setCategoriesData] = useState([
+    "All",
+    "Blogs and Articles",
+    "Books",
+    "Checklists",
+    "Colors",
+    "Community",
+    "Companies and Organizations",
+    "Courses and Certificates",
+    "Design Patterns",
+    "Design Systems",
+    "Emails",
+    "Employment",
+    "Gaming",
+    "Guides",
+    "Media",
+    "Mobile",
+    "Newsletter",
+    "Plugins",
+  ]);
+
   const [collapsed, setcollapsed] = useState(false);
 
   const collapseHandler = () => {
@@ -12,7 +35,7 @@ const SideBar = () => {
   };
 
   return (
-    <div className="bg-white flex flex-col w-2/12 justify-start items-start m-5 p-5 pr-0 mr-0">
+    <div className="bg-white flex flex-col w-2/12 justify-start items-start m-5 p-5 pr-0 mr-0 text-black">
       <h3
         className=" mb-4 font-light text-lg 
       text-[#4b4b4e]"
@@ -78,6 +101,11 @@ const SideBar = () => {
           </svg>
         </button>
       </div>
+      {collapsed === true
+        ? categoriesData.map((e) => {
+            return <ListItem name={e} />;
+          })
+        : null}
       <div
         id="submitBox"
         className="flex p-6 rounded-md mt-6 bg-[#f3f2fc] text-black flex-col justify-center"
