@@ -1,21 +1,51 @@
 "use client";
 
 import React, { useState } from "react";
+import HoverList from "../HoverList/HoverList";
 
 const Navbar = () => {
+  const [categoriesData, setCategoriesData] = useState([
+    "All",
+    "Blogs and Articles",
+    "Books",
+    "Checklists",
+    "Colors",
+    "Community",
+    "Companies and Organizations",
+    "Courses and Certificates",
+    "Design Patterns",
+    "Design Systems",
+    "Emails",
+    "Employment",
+    "Gaming",
+    "Guides",
+    "Media",
+    "Mobile",
+    "Newsletter",
+    "Plugins",
+  ]);
+  const [isMouseOn, setIsMouseOn] = useState(false);
   const [style, setStyle] = useState({
     //anchor tag styling
     aStyle:
-      "flex justify-center items-center p-1 w-20 hover:border-2 rounded-md border-[#381fd1]",
+      "flex justify-center items-center p-1 mb-2 mt-2 w-20 hover:border-2 rounded-md border-[#381fd1]",
     //main nav container styling
     containerStyle:
-      "w-full h-14 bg-[#f6f6eb] text-[#381fd1] font-extrabold text-sm",
+      "relative w-full h-14 bg-[#f6f6eb] text-[#381fd1] font-extrabold text-sm",
     // ui list styling
     ulStyle: "h-10 flex justify-center gap-8 items-center pt-2",
     // nav button Styling
     buttonStyle:
       "bg-[#381fd1] hover:bg-[#7e6de9] text-white rounded-md p-1 text-sm px-4",
   });
+
+  function MouseEnterHandler() {
+    setIsMouseOn(true);
+  }
+
+  function MouseExitHandler() {
+    setIsMouseOn(false);
+  }
 
   return (
     <div className={style.containerStyle}>
@@ -35,9 +65,12 @@ const Navbar = () => {
             fill="currentColor"
           ></path>
         </svg>
-        <a className={style.aStyle} href="/Page/Product">
-          PRODUCT
-        </a>
+        <div onMouseEnter={MouseEnterHandler} onMouseLeave={MouseExitHandler}>
+          <a className={style.aStyle} href="/Page/Product">
+            PRODUCT
+          </a>
+          {isMouseOn && <HoverList />}
+        </div>
         <a className={style.aStyle} href="/Page/Home">
           PRICING
         </a>
