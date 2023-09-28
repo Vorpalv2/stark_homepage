@@ -21,7 +21,7 @@ const RightBar = () => {
   });
 
   return (
-    <div className="bg-white w-6/12 m-5 p-5 ml-0 pl-0">
+    <div className="bg-white pl-8 w-6/12 m-5 p-5 ml-0">
       <div className="pt-2 flex justify-between" id="firstLine">
         <h1 className="text-[#11284b] font-bold text-5xl pl-4">
           {data.Heading}
