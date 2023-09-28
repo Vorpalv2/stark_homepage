@@ -1,9 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
 import ListItem from "../ListItems/ListItem";
-import CollectionsBox from "../CollectionsBox/CollectionsBox";
 
 const SideBar = () => {
   const [categoriesData, setCategoriesData] = useState([
@@ -89,17 +87,15 @@ const SideBar = () => {
             <path
               d="M1 1L5 5L9 1"
               stroke="#4B4B4E"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             ></path>
           </svg>
         </button>
       </div>
       {collapsed === true
-        ? categoriesData.map((e) => {
-            return <ListItem name={e} />;
-          })
+        ? categoriesData.map((e) => <ListItem name={e} link={e} />)
         : null}
       <div
         id="submitBox"
