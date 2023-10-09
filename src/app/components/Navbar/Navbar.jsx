@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import HoverList from "../HoverList/HoverList";
 
 const Navbar = () => {
@@ -66,26 +67,26 @@ const Navbar = () => {
           ></path>
         </svg>
         <div onMouseEnter={MouseEnterHandler} onMouseLeave={MouseExitHandler}>
-          <a className={style.aStyle} href="/Page/Product">
+          <Link className={style.aStyle} href="/Page/Product">
             PRODUCT
-          </a>
+          </Link>
           {isMouseOn && <HoverList />}
         </div>
-        <a className={style.aStyle} href="/Page/Pricing">
+        <Link className={style.aStyle} href="/Page/Pricing">
           PRICING
-        </a>
-        <a className={style.aStyle} href="/Home">
+        </Link>
+        <Link className={style.aStyle} href="/Home">
           BLOG
-        </a>
-        <a className={style.aStyle} href="/">
+        </Link>
+        <Link className={style.aStyle} href="/">
           LIBRARY
-        </a>
-        <a className={style.aStyle} href="/">
+        </Link>
+        <Link className={style.aStyle} href="/">
           SUPPORT
-        </a>
-        <a className={style.aStyle} href="/">
+        </Link>
+        <Link className={style.aStyle} href="/">
           LOG IN
-        </a>
+        </Link>
         <button className={style.buttonStyle}>30-DAY FREE TEAM TRIAL</button>
       </ul>
     </div>
