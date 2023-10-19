@@ -68,7 +68,7 @@ const SideBar = () => {
         </a>
         <button
           onClick={() => collapseHandler()}
-          className="flex justify-between w-full hover:text-[#381fd1] active:text-[#381fd1"
+          className="flex justify-between w-full hover:text-[#381fd1] active:text-[#381fd1]"
         >
           <h2 className="text-lg pl-2 py-2 font-bold">Categories</h2>
           <svg
